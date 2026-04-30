@@ -150,3 +150,94 @@ select {
     color: #ff9999;
     font-weight: bold;
 }
+
+/* ========== RSVP Section ========== */
+.rsvp-section {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.rsvp-question {
+    font-size: 16px;
+    font-weight: 600;
+    color: #5a4a5a;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.rsvp-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rsvp-option {
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.rsvp-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.rsvp-option-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.rsvp-option-content:hover {
+    border-color: #a18ba1;
+    background-color: #f9f5f9;
+}
+
+.rsvp-option input[type="radio"]:checked + .rsvp-option-content {
+    border-color: #a18ba1;
+    background-color: #f0e6f0;
+    color: #5a4a5a;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(161, 139, 161, 0.25);
+}
+
+.rsvp-icon {
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+/* Conditional RSVP detail fields */
+.rsvp-details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+    margin-top: 0;
+}
+
+.rsvp-details.show {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+.rsvp-details .form-field.full-width {
+    margin: 0 0 10px 0;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.rsvp-details .form-field.full-width:last-child {
+    margin-bottom: 0;
+}
