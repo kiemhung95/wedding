@@ -227,75 +227,26 @@
                 <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp"
                     data-wow-delay="0.3s">
                     <div class="d-flex justify-content-center">
-                        <img src="img/nha_gai.png" class="img-fluid rounded mb-3 mb-sm-0"
+                        <img src="img/Openning.png" class="img-fluid rounded mb-3 mb-sm-0"
                             style="max-width: 350px; height: auto;" alt="nha_gai">
                     </div>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp"
                     data-wow-delay="0.3s">
                     <div class="d-flex justify-content-center">
-                        <img src="img/bao_hy.png" class="img-fluid rounded mb-3 mb-sm-0"
+                        <img src="img/Calendar.png" class="img-fluid rounded mb-3 mb-sm-0"
                             style="max-width: 400px; height: auto;" alt="bao_hy">
                     </div>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp"
                     data-wow-delay="0.3s">
                     <div class="d-flex justify-content-center">
-                        <img src="img/nha_trai.png" class="img-fluid rounded mb-3 mb-sm-0"
-                            style="max-width: 350px; height: auto;" alt="nha_trai">
+                        <a href="https://maps.app.goo.gl/ikUfMjQthJPG1Fky5" target="_blank">
+                            <img src="img/Maps.png" class="img-fluid rounded mb-3 mb-sm-0"
+                                style="max-width: 350px; height: auto;" alt="nha_trai">
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- todo:: update link maps, ngay cuoi, ngay bao hy -->
-    <div class="container-fluid position-relative py-5" id="locationSection">
-        <div class="container position-relative py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h1 class="display-2 text-dark">Bản đồ địa điểm</h1>
-            </div>
-            <div class="row g-4">
-                <!-- <div class="col-lg-4 d-flex flex-column align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                    <a href="https://maps.app.goo.gl/ZE1MRbxjFDJ4XZvi7" target="_blank"
-                        style="text-decoration: none; width: 100%;">
-                        <div class="text-box mb-3 p-3 rounded"
-                            style="border: 1px solid #ddd; background-color: #f8f9fa; text-align: center;">
-                            <span class="text-primary fw-bold">Địa chỉ tiệc Nhà Gái - 12/07</span>
-                        </div>
-                    </a>
-                    <div class="d-flex justify-content-center">
-                        <img src="img/ban_do_tiec_nha_gai.png" class="img-fluid rounded"
-                            style="max-width: 350px; height: auto;" alt="location1">
-                    </div>
-                </div> -->
-
-                <div class="col-lg-4 d-flex flex-column align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                    <a href="https://maps.app.goo.gl/ikUfMjQthJPG1Fky5" target="_blank"
-                        style="text-decoration: none; width: 100%;">
-                        <div class="text-box mb-3 p-3 rounded"
-                            style="border: 1px solid #ddd; background-color: #f8f9fa; text-align: center;">
-                            <span class="text-primary fw-bold">Địa chỉ tiệc Báo Hỷ - 26/07</span>
-                        </div>
-                    </a>
-                    <div class="d-flex justify-content-center">
-                        <img src="img/ban_do_tiec_bao_hy.png" class="img-fluid rounded"
-                            style="max-width: 350px; height: auto;" alt="location2">
-                    </div>
-                </div>
-
-                <!-- <div class="col-lg-4 d-flex flex-column align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                    <a href="https://maps.app.goo.gl/ovdd9NXBaZUj6FZL8" target="_blank"
-                        style="text-decoration: none; width: 100%;">
-                        <div class="text-box mb-3 p-3 rounded"
-                            style="border: 1px solid #ddd; background-color: #f8f9fa; text-align: center;">
-                            <span class="text-primary fw-bold">Địa chỉ tiệc Nhà Trai - 01/05</span>
-                        </div>
-                    </a>
-                    <div class="d-flex justify-content-center">
-                        <img src="img/ban_do_tiec_nha_trai.png" class="img-fluid rounded"
-                            style="max-width: 350px; height: auto;" alt="location3">
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -373,9 +324,8 @@
                     </div>
                     <div class="form-field">
                         <select id="relationship">
-                            <option value="Bạn cô dâu">Bạn cô dâu</option>
-                            <option value="Bạn chú rể">Bạn chú rể</option>
-                            <option value="Bạn chú rể">Bạn dâu rể</option>
+                            <option value="Bạn cô dâu">Bạn/Người thân cô dâu</option>
+                            <option value="Bạn chú rể">Bạn/Người thân chú rể</option>
                         </select>
                     </div>
                 </div>
@@ -383,20 +333,39 @@
                 <div class="form-field full-width">
                     <textarea type="text" id="message" placeholder="Nhập lời chúc của bạn"></textarea>
                 </div>
-                <!-- todo:: update loi chuc -->
-                <div class="form-field full-width" id="select-available-message">
-                    <select>
-                        <option value="">Nhập lời chúc có sẵn.</option>
-                        <option value="option1">Chúc cho tình yêu của hai bạn mãi bền lâu như thuở ban đầu.</option>
-                        <option value="option2">Chúc mừng hạnh phúc, mong rằng mọi điều tốt đẹp sẽ luôn đến với hai bạn!
-                        </option>
-                        <option value="option3">Vạn sự như ý, trăm năm viên mãn nhé!</option>
-                        <option value="option4">Tình yêu trọn vẹn, hạnh phúc ngập tràn!</option>
-                        <option value="option5">Chúc mừng ngày trọng đại! Chúc hai bạn luôn vui vẻ và yêu thương nhau
-                            mãi mãi.
-                        </option>
-                    </select>
+
+                <!-- RSVP Section -->
+                <div class="rsvp-section">
+                    <p class="rsvp-question">Bạn có thể đến chung vui cùng tụi mình không? 💌</p>
+                    <div class="rsvp-options">
+                        <label class="rsvp-option" id="rsvp-option-attending">
+                            <input type="radio" name="attendance" value="attending" id="attendanceYes">
+                            <span class="rsvp-option-content">
+                                <span class="rsvp-icon">🥳</span>
+                                <span>Mình rất vui được đến chung vui cùng bạn</span>
+                            </span>
+                        </label>
+                        <label class="rsvp-option" id="rsvp-option-not-attending">
+                            <input type="radio" name="attendance" value="not-attending" id="attendanceNo">
+                            <span class="rsvp-option-content">
+                                <span class="rsvp-icon">😢</span>
+                                <span>Tiếc là mình không thể tham dự, chúc bạn một ngày thật hạnh phúc</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Conditional fields - shown when attending -->
+                    <div class="rsvp-details" id="rsvpDetails">
+                        <div class="form-field full-width">
+                            <input type="text" id="guestCount" placeholder="Số người sẽ tham dự">
+                        </div>
+                        <div class="form-field full-width">
+                            <input type="text" id="dietaryRequirements"
+                                placeholder="Bạn có yêu cầu đặc biệt về ăn uống không? (vd: ăn chay, dị ứng, v.v)">
+                        </div>
+                    </div>
                 </div>
+
                 <button type="submit" class="submit-button">Gửi lời chúc cho Dâu Rể</button>
             </form>
         </div>
