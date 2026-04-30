@@ -1,366 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Huy & Chi - Wedding</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="Join us in celebrating our special day!" name="description">
 
-        <!-- Open Graph Meta Tags -->
-        <meta property="og:title" content="Huy & Chi - Wedding">
-        <meta property="og:description" content="Join us in celebrating our special day!">
-        <meta property="og:image" content="https://huy-chi.github.io/ourwedding/img/HMP01384.jpg">
-        <meta property="og:url" content="https://huy-chi.github.io/ourwedding/">
-        <meta property="og:type" content="website">
-        
-        <!-- Twitter Card Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Huy & Chi - Wedding">
-        <meta name="twitter:description" content="Join us in celebrating our special day!">
-        <meta name="twitter:image" content="https://huy-chi.github.io/ourwedding/img/HMP01384.jpg">
+<head>
+    <meta charset="utf-8">
+    <title>Hùng & Ngân - Wedding</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="Join us in celebrating our special day!" name="description">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Hùng & Ngân - Wedding">
+    <meta property="og:description" content="Join us in celebrating our special day!">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta property="og:image" content="https://kiemhung95.github.io/wedding/img/HMP01384.jpg">
+    <meta property="og:url" content="https://kiemhung95.github.io/wedding/">
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hùng & Ngân - Wedding">
+    <meta name="twitter:description" content="Join us in celebrating our special day!">
+    <meta name="twitter:image" content="https://kiemhung95.github.io/wedding/img/HMP01384.jpg">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/form-fill.css" rel="stylesheet">
-        <link href="css/qr_code.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form-fill.css" rel="stylesheet">
+    <link href="css/qr_code.css" rel="stylesheet">
 
-        <link rel="icon" href="img/HMP01131.jpg" type="image/x-icon">
+    <link rel="icon" href="img/HMP01131.jpg" type="image/x-icon">
 
-    
-    </head>
 
-    <body data-bs-spy="scroll" data-bs-target="#navBar" id="weddingHome">
-        <!-- Navigation Menu -->
-        <div class="nav-menu-container">
-            <button class="nav-menu-toggle" id="navMenuToggle">
-                <i class="fas fa-bars" id="menuIcon"></i>
-                <i class="fas fa-times" id="closeIcon"></i>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navBar" id="weddingHome">
+
+    <!-- Welcome Overlay -->
+    <div id="welcomeOverlay" style="
+        position: fixed; inset: 0; z-index: 9999;
+        background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(30,0,20,0.85) 100%);
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        cursor: pointer; backdrop-filter: blur(6px);
+        transition: opacity 0.8s ease;
+    ">
+        <div style="text-align:center; color:#fff; user-select:none;">
+            <p
+                style="font-family:'Great Vibes',cursive; font-size:clamp(2.5rem,8vw,5rem); margin:0; text-shadow:0 2px 20px rgba(255,200,200,0.6);">
+                Hùng &amp; Ngân</p>
+            <p
+                style="font-size:clamp(0.8rem,2.5vw,1rem); letter-spacing:4px; margin:8px 0 32px; opacity:0.8; text-transform:uppercase;">
+                26 · 07 · 2026</p>
+            <div style="
+                display:inline-flex; align-items:center; gap:10px;
+                border:1px solid rgba(255,255,255,0.5); border-radius:40px;
+                padding:12px 28px; font-size:0.95rem; letter-spacing:2px;
+                background:rgba(255,255,255,0.08);
+                animation: pulse-border 2s ease-in-out infinite;
+            ">
+                <span>🎵</span> <span>Nhấn để vào trang</span>
+            </div>
+        </div>
+    </div>
+    <style>
+        @keyframes pulse-border {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+            }
+        }
+    </style>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu-container">
+        <button class="nav-menu-toggle" id="navMenuToggle">
+            <i class="fas fa-bars" id="menuIcon"></i>
+            <i class="fas fa-times" id="closeIcon"></i>
+        </button>
+        <div class="nav-menu" id="navMenu">
+            <a href="#weddingAbout" class="nav-menu-item">
+                <i class="fas fa-heart"></i>
+                <span class="menu-text">Lời ngỏ</span>
+            </a>
+            <a href="#weddingCalendar" class="nav-menu-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="menu-text">Sự kiện cưới</span>
+            </a>
+            <a href="#weddingGallery" class="nav-menu-item">
+                <i class="fas fa-images"></i>
+                <span class="menu-text">Pre-Wedding Gallery</span>
+            </a>
+            <a href="#weddingGift" class="nav-menu-item">
+                <i class="fas fa-gift"></i>
+                <span class="menu-text">Hộp mừng cưới</span>
+            </a>
+            <a href="#weddingWishes" class="nav-menu-item">
+                <i class="fas fa-comment-dots"></i>
+                <span class="menu-text">Lời Chúc</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid carousel-header px-0">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+            </ol>
+            <!-- todo:: update hinh cuoi -->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="img/HMP01009.jpg" class="img-fluid" alt="Image">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/HMP00645.jpg" class="img-fluid" alt="Image">
+                </div>
+                <div class="carousel-item" id="carousel-item-3">
+                    <img src="img/HMP01429.jpg" class="img-fluid bg-secondary" alt="Image">
+                </div>
+            </div>
+
+            <!-- Single caption for all slides -->
+            <div class="carousel-caption">
+                <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px;">
+                    <h1 class="display-1 text-capitalize text-white mb-3">Hùng <i class="fa fa-heart text-primary"></i>
+                        Ngân</h1>
+                    <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-5"
+                        style="border-style: double;">
+                        <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px;">26-07-2026</h4>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <div class="nav-menu" id="navMenu">
-                <a href="#weddingAbout" class="nav-menu-item">
-                    <i class="fas fa-heart"></i>
-                    <span class="menu-text">Lời ngỏ</span>
-                </a>
-                <a href="#weddingCalendar" class="nav-menu-item">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span class="menu-text">Sự kiện cưới</span>
-                </a>
-                <a href="#weddingGallery" class="nav-menu-item">
-                    <i class="fas fa-images"></i>
-                    <span class="menu-text">Pre-Wedding Gallery</span>
-                </a>
-                <a href="#weddingGift" class="nav-menu-item">
-                    <i class="fas fa-gift"></i>
-                    <span class="menu-text">Hộp mừng cưới</span>
-                </a>
-                <a href="#weddingWishes" class="nav-menu-item">
-                    <i class="fas fa-comment-dots"></i>
-                    <span class="menu-text">Lời Chúc</span>
-                </a>
-            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </div>
+    <!-- Carousel End -->
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" role="status"></div>
-        </div>
-        <!-- Spinner End -->
-
-        <!-- Carousel Start -->
-        <div class="container-fluid carousel-header px-0">
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="img/HMP01009.jpg" class="img-fluid" alt="Image">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/HMP00645.jpg" class="img-fluid" alt="Image">
-                    </div>
-                    <div class="carousel-item" id="carousel-item-3">
-                        <img src="img/HMP01429.jpg" class="img-fluid bg-secondary" alt="Image">
-                    </div>
-                </div>
-                
-                <!-- Single caption for all slides -->
-                <div class="carousel-caption">
-                    <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px;">
-                        <h1 class="display-1 text-capitalize text-white mb-3">Huy <i class="fa fa-heart text-primary"></i> Chi</h1>
-                        <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-5" style="border-style: double;">
-                            <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px;">01-05-2025</h4>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        <!-- Carousel End -->
-
-        <div class="container-fluid position-relative py-5" id="weddingAbout">
-            <div class="container position-relative py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h1 class="display-2 text-dark">Lời ngỏ</h1>
-                    <h5>Cảm ơn bạn đã dành tình cảm cho vợ chồng mình.
-                        Chúng mình biết mọi người đều đang rất bận, bận với công việc, với cuộc sống và với cả gia đình.
-                        Nhưng thực sự sẽ rất tuyệt vời nếu như ngày Hạnh Phúc của chúng mình có thêm sự góp mặt của bạn và người thương.
-                        Vợ chồng mình rất hi vọng bạn sẽ có mặt trong ngày quan trọng này để chứng kiến và chia sẻ niềm hạnh phúc cùng chúng mình.
-                        Một lần nữa, chân thành cảm ơn tất cả mọi người.<br>
-                        ❤️❤️❤️
-                    </h5>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="d-flex justify-content-center">
-                            <img src="img/HMP00407.jpg" class="img-fluid rounded mb-3 mb-sm-0" style="max-width: 400px; height: auto;" alt="co_dau">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="d-flex justify-content-center">
-                            <img src="img/happywedding.png" class="img-fluid rounded mb-3 mb-sm-0" style="max-width: 350px; height: auto;" alt="happywedding">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="d-flex justify-content-center">
-                            <img src="img/HMP00757.jpg" class="img-fluid rounded mb-3 mb-sm-0" style="max-width: 400px; height: auto;" alt="chu_re">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid position-relative py-5" id="weddingCalendar">
-            <div class="container position-relative py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h1 class="display-2 text-dark">Sự kiện cưới</h1>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="d-flex justify-content-center">
-                            <img src="img/nha_gai.png" class="img-fluid rounded mb-3 mb-sm-0" style="max-width: 350px; height: auto;" alt="nha_gai">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="d-flex justify-content-center">
-                            <img src="img/bao_hy.png" class="img-fluid rounded mb-3 mb-sm-0" style="max-width: 400px; height: auto;" alt="bao_hy">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="d-flex justify-content-center">
-                            <img src="img/nha_trai.png" class="img-fluid rounded mb-3 mb-sm-0" style="max-width: 350px; height: auto;" alt="nha_trai">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid position-relative py-5" id="locationSection">
-            <div class="container position-relative py-5">
-              <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h1 class="display-2 text-dark">Bản đồ địa điểm</h1>
-              </div>
-              <div class="row g-4">
-                <div class="col-lg-4 d-flex flex-column align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                  <a href="https://maps.app.goo.gl/ZE1MRbxjFDJ4XZvi7" target="_blank" 
-                     style="text-decoration: none; width: 100%;">
-                    <div class="text-box mb-3 p-3 rounded" 
-                         style="border: 1px solid #ddd; background-color: #f8f9fa; text-align: center;">
-                      <span class="text-primary fw-bold">Địa chỉ tiệc Nhà Gái - 29/04</span>
-                    </div>
-                  </a>
-                  <div class="d-flex justify-content-center">
-                    <img src="img/ban_do_tiec_nha_gai.png" class="img-fluid rounded" style="max-width: 350px; height: auto;" alt="location1">
-                  </div>
-                </div>
-          
-                <div class="col-lg-4 d-flex flex-column align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                  <a href="https://maps.app.goo.gl/1s9n1E6nckvBG7dP7" target="_blank" 
-                     style="text-decoration: none; width: 100%;">
-                    <div class="text-box mb-3 p-3 rounded" 
-                         style="border: 1px solid #ddd; background-color: #f8f9fa; text-align: center;">
-                      <span class="text-primary fw-bold">Địa chỉ tiệc Báo Hỷ - 07/06</span>
-                    </div>
-                  </a>
-                  <div class="d-flex justify-content-center">
-                    <img src="img/ban_do_tiec_bao_hy.png" class="img-fluid rounded" style="max-width: 350px; height: auto;" alt="location2">
-                  </div>
-                </div>
-          
-                <div class="col-lg-4 d-flex flex-column align-items-center wow fadeInUp" data-wow-delay="0.3s">
-                  <a href="https://maps.app.goo.gl/ovdd9NXBaZUj6FZL8" target="_blank" 
-                     style="text-decoration: none; width: 100%;">
-                    <div class="text-box mb-3 p-3 rounded" 
-                         style="border: 1px solid #ddd; background-color: #f8f9fa; text-align: center;">
-                      <span class="text-primary fw-bold">Địa chỉ tiệc Nhà Trai - 01/05</span>
-                    </div>
-                  </a>
-                  <div class="d-flex justify-content-center">
-                    <img src="img/ban_do_tiec_nha_trai.png" class="img-fluid rounded" style="max-width: 350px; height: auto;" alt="location3">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        <div class="container-fluid gallery position-relative py-5" id="weddingGallery">
-            <div class="container position-relative py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h1 class="display-2 text-dark">Pre-Wedding Gallery</h1>
-                </div>
-                <div class="row g-4" id="gallery-images">
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid gallery position-relative py-5" id="weddingGift">
-            <div class="container position-relative py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h1 class="display-2 text-dark">Hộp mừng cưới</h1>
-                    <h5 class="thank_text">Cảm ơn tất cả các tình cảm mà mọi người đã dành cho <br><span>Huy & Chi</span></h5>
-                    <div class="gift-icon" id="giftIcon">
-                        🎁
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    
-        <div class="popup-overlay" id="popupOverlay">
-            <div class="popup">
-                <button class="close-btn" id="closeBtn">×</button>
-                
-                <div class="popup-header">
-                    <h2>HỘP MỪNG CƯỚI</h2>
-                    <p>Vợ chồng xin cảm ơn tất cả tình cảm của mọi người ạ ❤</p>
-                </div>
-                
-                <div class="popup-content">
-                    <div class="qr-section">
-                        <h3 class="thank_text">MỪNG CƯỚI ĐẾN CHÚ RỂ</h3>
-                        <div class="qr-code">
-                            <img src="img/QR_chu_re.jpg" id="qr_chu_re" alt="QR Code">
-                        </div>
-                        <div class="button-group">
-                            <button class="action-btn" onclick="downloadQRCode('qr_chu_re', 'img/QR_chu_re.jpg')">📥 Tải QR</button>
-                            <button class="action-btn" onclick="copyAccountNumber('0271001052171')">📋 Copy STK</button>
-                        </div>
-                    </div>
-                    
-                    <div class="qr-section">
-                        <h3 class="thank_text">MỪNG CƯỚI ĐẾN CÔ DÂU</h3>
-                        <div class="qr-code">
-                            <img src="img/QR_co_dau.jpg" id="qr_co_dau"alt="QR Code">
-                        </div>
-                        <div class="button-group">
-                            <button class="action-btn" onclick="downloadQRCode('qr_co_dau', 'img/QR_co_dau.jpg')">📥 Tải QR</button>
-                            <button class="action-btn" onclick="copyAccountNumber('6100281026178')">📋 Copy STK</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container-fluid position-relative py-5" id="weddingWishes">
+    <div class="container-fluid position-relative py-5" id="weddingAbout">
+        <div class="container position-relative py-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h1 class="display-2 text-dark">Lời Chúc</h1>
-                <h5 class="congrat_text">Cảm ơn mọi người rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất<br>đến đám cưới của chúng mình! ❤️</h5>
-                <form class="form-container" data-wow-delay="0.1s" id="message-form">
-                    <div class="form-row">
-                        <div class="form-field">
-                            <input type="text" id="name" placeholder="Họ và Tên">
-                        </div>
-                        <div class="form-field">
-                            <select id="relationship">
-                                <option value="Bạn cô dâu">Bạn cô dâu</option>
-                                <option value="Bạn chú rể">Bạn chú rể</option>
-                                <option value="Bạn chú rể">Bạn dâu rể</option>
-                            </select>
-                        </div>
+                <h1 class="display-2 text-dark">Lời ngỏ</h1>
+                <h5>Thân gửi gia đình và những người bạn trân quý,<br><br>
+                    "Hạnh phúc lớn nhất không phải là đích đến, mà là hành trình chúng ta đi cùng nhau."<br><br>
+                    Trong hành trình ấy, chúng mình thật may mắn khi luôn có sự đồng hành, ủng hộ và yêu thương từ mọi
+                    người. Giữa bộn bề của cuộc sống, chúng mình vô cùng trân trọng khi bạn dành thời gian quý báu để
+                    hiện diện và sẻ chia khoảnh khắc thiêng liêng này.<br><br>
+                    Sự góp mặt của bạn chính là món quà ý nghĩa nhất, là mảnh ghép hoàn hảo để ngày chung đôi của chúng
+                    mình thêm phần trọn vẹn và nồng ấm.<br><br>
+                    Từ tận đáy lòng, xin chân thành cảm ơn và mong sớm được đón tiếp bạn!<br>
+                    ❤️❤️❤️
+                </h5>
+            </div>
+            <!-- todo:: update hinh cuoi -->
+            <div class="row">
+                <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp"
+                    data-wow-delay="0.3s">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/HMP00407.jpg" class="img-fluid rounded mb-3 mb-sm-0"
+                            style="max-width: 400px; height: auto;" alt="co_dau">
                     </div>
-                    
-                    <div class="form-field full-width">
-                        <textarea type="text" id="message" placeholder="Nhập lời chúc của bạn"></textarea>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp"
+                    data-wow-delay="0.3s">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/happywedding.png" class="img-fluid rounded mb-3 mb-sm-0"
+                            style="max-width: 350px; height: auto;" alt="happywedding">
                     </div>
-                    
-                    <div class="form-field full-width" id="select-available-message">
-                        <select>
-                            <option value="">Nhập lời chúc có sẵn.</option>
-                            <option value="option1">Chúc cho tình yêu của hai bạn mãi bền lâu như thuở ban đầu.</option>
-                            <option value="option2">Chúc mừng hạnh phúc, mong rằng mọi điều tốt đẹp sẽ luôn đến với hai bạn!</option>
-                            <option value="option3">Vạn sự như ý, trăm năm viên mãn nhé!</option>
-                            <option value="option4">Tình yêu trọn vẹn, hạnh phúc ngập tràn!</option>
-                            <option value="option5">Chúc mừng ngày trọng đại! Chúc hai bạn luôn vui vẻ và yêu thương nhau mãi mãi.
-                            </option>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp"
+                    data-wow-delay="0.3s">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/HMP00757.jpg" class="img-fluid rounded mb-3 mb-sm-0"
+                            style="max-width: 400px; height: auto;" alt="chu_re">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid position-relative py-5" id="weddingCalendar">
+        <div class="container position-relative py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="display-2 text-dark">Sự kiện cưới</h1>
+            </div>
+            <!-- todo:: update hinh cuoi -->
+            <div class="row">
+                <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp"
+                    data-wow-delay="0.3s">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/nha_gai.png" class="img-fluid rounded mb-3 mb-sm-0"
+                            style="max-width: 350px; height: auto;" alt="nha_gai">
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp"
+                    data-wow-delay="0.3s">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/bao_hy.png" class="img-fluid rounded mb-3 mb-sm-0"
+                            style="max-width: 400px; height: auto;" alt="bao_hy">
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp"
+                    data-wow-delay="0.3s">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/nha_trai.png" class="img-fluid rounded mb-3 mb-sm-0"
+                            style="max-width: 350px; height: auto;" alt="nha_trai">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- todo:: update link maps, ngay cuoi, ngay bao hy -->
+    <div class="container-fluid position-relative py-5" id="locationSection">
+        <div class="container position-relative py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="display-2 text-dark">Bản đồ địa điểm</h1>
+            </div>
+            <div class="row g-4">
+                <!-- <div class="col-lg-4 d-flex flex-column align-items-center wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="https://maps.app.goo.gl/ZE1MRbxjFDJ4XZvi7" target="_blank"
+                        style="text-decoration: none; width: 100%;">
+                        <div class="text-box mb-3 p-3 rounded"
+                            style="border: 1px solid #ddd; background-color: #f8f9fa; text-align: center;">
+                            <span class="text-primary fw-bold">Địa chỉ tiệc Nhà Gái - 12/07</span>
+                        </div>
+                    </a>
+                    <div class="d-flex justify-content-center">
+                        <img src="img/ban_do_tiec_nha_gai.png" class="img-fluid rounded"
+                            style="max-width: 350px; height: auto;" alt="location1">
+                    </div>
+                </div> -->
+
+                <div class="col-lg-4 d-flex flex-column align-items-center wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="https://maps.app.goo.gl/ikUfMjQthJPG1Fky5" target="_blank"
+                        style="text-decoration: none; width: 100%;">
+                        <div class="text-box mb-3 p-3 rounded"
+                            style="border: 1px solid #ddd; background-color: #f8f9fa; text-align: center;">
+                            <span class="text-primary fw-bold">Địa chỉ tiệc Báo Hỷ - 26/07</span>
+                        </div>
+                    </a>
+                    <div class="d-flex justify-content-center">
+                        <img src="img/ban_do_tiec_bao_hy.png" class="img-fluid rounded"
+                            style="max-width: 350px; height: auto;" alt="location2">
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-4 d-flex flex-column align-items-center wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="https://maps.app.goo.gl/ovdd9NXBaZUj6FZL8" target="_blank"
+                        style="text-decoration: none; width: 100%;">
+                        <div class="text-box mb-3 p-3 rounded"
+                            style="border: 1px solid #ddd; background-color: #f8f9fa; text-align: center;">
+                            <span class="text-primary fw-bold">Địa chỉ tiệc Nhà Trai - 01/05</span>
+                        </div>
+                    </a>
+                    <div class="d-flex justify-content-center">
+                        <img src="img/ban_do_tiec_nha_trai.png" class="img-fluid rounded"
+                            style="max-width: 350px; height: auto;" alt="location3">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid gallery position-relative py-5" id="weddingGallery">
+        <div class="container position-relative py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="display-2 text-dark">Pre-Wedding Gallery</h1>
+            </div>
+            <div class="row g-4" id="gallery-images">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid gallery position-relative py-5" id="weddingGift">
+        <div class="container position-relative py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="display-2 text-dark">Hộp mừng cưới</h1>
+                <h5 class="thank_text">Cảm ơn tất cả các tình cảm mà mọi người đã dành cho <br><span>Hùng & Ngân</span>
+                </h5>
+                <div class="gift-icon" id="giftIcon">
+                    🎁
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <button class="close-btn" id="closeBtn">×</button>
+
+            <div class="popup-header">
+                <h2>HỘP MỪNG CƯỚI</h2>
+                <p>Vợ chồng xin cảm ơn tất cả tình cảm của mọi người ạ ❤</p>
+            </div>
+            <!-- todo:: update QR code, STK -->
+            <div class="popup-content">
+                <div class="qr-section">
+                    <h3 class="thank_text">MỪNG CƯỚI ĐẾN CHÚ RỂ</h3>
+                    <div class="qr-code">
+                        <img src="img/QR_chu_re.jpg" id="qr_chu_re" alt="QR Code">
+                    </div>
+                    <div class="button-group">
+                        <button class="action-btn" onclick="downloadQRCode('qr_chu_re', 'img/QR_chu_re.jpg')">📥 Tải
+                            QR</button>
+                        <button class="action-btn" onclick="copyAccountNumber('41128666888')">📋 Copy STK</button>
+                    </div>
+                </div>
+
+                <div class="qr-section">
+                    <h3 class="thank_text">MỪNG CƯỚI ĐẾN CÔ DÂU</h3>
+                    <div class="qr-code">
+                        <img src="img/QR_co_dau.jpg" id="qr_co_dau" alt="QR Code">
+                    </div>
+                    <div class="button-group">
+                        <button class="action-btn" onclick="downloadQRCode('qr_co_dau', 'img/QR_co_dau.jpg')">📥 Tải
+                            QR</button>
+                        <button class="action-btn" onclick="copyAccountNumber('6100281026178')">📋 Copy STK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid position-relative py-5" id="weddingWishes">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+            <h1 class="display-2 text-dark">Lời Chúc</h1>
+            <h5 class="congrat_text">Cảm ơn mọi người rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất<br>đến đám
+                cưới của chúng mình! ❤️</h5>
+            <form class="form-container" data-wow-delay="0.1s" id="message-form">
+                <div class="form-row">
+                    <div class="form-field">
+                        <input type="text" id="name" placeholder="Họ và Tên">
+                    </div>
+                    <div class="form-field">
+                        <select id="relationship">
+                            <option value="Bạn cô dâu">Bạn cô dâu</option>
+                            <option value="Bạn chú rể">Bạn chú rể</option>
+                            <option value="Bạn chú rể">Bạn dâu rể</option>
                         </select>
                     </div>
-                    <button type="submit" class="submit-button">Gửi lời chúc cho Dâu Rể</button>
-                </form>
+                </div>
+
+                <div class="form-field full-width">
+                    <textarea type="text" id="message" placeholder="Nhập lời chúc của bạn"></textarea>
+                </div>
+                <!-- todo:: update loi chuc -->
+                <div class="form-field full-width" id="select-available-message">
+                    <select>
+                        <option value="">Nhập lời chúc có sẵn.</option>
+                        <option value="option1">Chúc cho tình yêu của hai bạn mãi bền lâu như thuở ban đầu.</option>
+                        <option value="option2">Chúc mừng hạnh phúc, mong rằng mọi điều tốt đẹp sẽ luôn đến với hai bạn!
+                        </option>
+                        <option value="option3">Vạn sự như ý, trăm năm viên mãn nhé!</option>
+                        <option value="option4">Tình yêu trọn vẹn, hạnh phúc ngập tràn!</option>
+                        <option value="option5">Chúc mừng ngày trọng đại! Chúc hai bạn luôn vui vẻ và yêu thương nhau
+                            mãi mãi.
+                        </option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">Gửi lời chúc cho Dâu Rể</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Section -->
+    <div class="thank-you-section">
+        <div class="thank-you-image">
+            <img src="img/anh_bia.jpg" alt="Thank You Background">
+        </div>
+        <div class="thank-you-content">
+            <div class="thank-you-text">
+                <h1>Thank you!</h1>
+                <h3>-Hùng & Ngân-</h3>
             </div>
         </div>
+    </div>
 
-        <!-- Thank You Section -->
-        <div class="thank-you-section">
-            <div class="thank-you-image">
-                <img src="img/anh_bia.jpg" alt="Thank You Background">
-            </div>
-            <div class="thank-you-content">
-                <div class="thank-you-text">
-                    <h1>Thank you!</h1>
-                    <h3>-Huy & Chi-</h3>
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Hùng &
+                            Ngân</a>, All right reserved 2026.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-white">
+                    <!--/*** This template is free as long as you keep the below author's credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author's credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Idea By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> - Redesign and
+                    configured by Huy Tran & Thao Chi
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Copyright End -->
 
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Huy & Chi</a>, All right reserved 2025.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author's credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author's credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Idea By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> - Redesign and configured by Huy Tran & Thao Chi
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top rounded"><i
+            class="fa fa-arrow-up"></i></a>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top rounded"><i class="fa fa-arrow-up"></i></a>   
 
-        
+    <!-- Music Player Button -->
+    <div class="music-player-container">
+        <button class="music-player-toggle" id="musicPlayerToggle">
+            <i class="fas fa-music" id="musicIcon"></i>
+            <i class="fas fa-pause" id="pauseIcon"></i>
+            <span class="music-text">Phát Nhạc</span>
+        </button>
+        <audio id="backgroundMusic" loop autoplay>
+            <source src="audio/nhaccuoi.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -368,7 +460,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-    
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
@@ -379,19 +471,8 @@
 
     <!-- Custom Alert -->
     <div class="custom-alert" id="customAlert"></div>
-    
-    <!-- Music Player Button -->
-    <div class="music-player-container">
-        <button class="music-player-toggle" id="musicPlayerToggle">
-            <i class="fas fa-music" id="musicIcon"></i>
-            <i class="fas fa-pause" id="pauseIcon"></i>
-            <span class="music-text">Phát Nhạc</span>
-        </button>
-        <audio id="backgroundMusic" loop>
-            <source src="audio/Beautiful in White x Canon in D.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-    </body>
+
+
+</body>
 
 </html>
