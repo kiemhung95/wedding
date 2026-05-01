@@ -3,10 +3,10 @@ const galleryImages = [
     'img/HUG05956.jpeg',
     'img/HUG05707.jpeg',
     'img/HUG05853.jpeg',
-    'img/HUG06005.jpeg',
-    'img/HUG06149.jpeg',
-    'img/HUG06352.jpeg',
-    'img/HUG06385.jpeg',
+    // 'img/HUG06005.jpeg',
+    // 'img/HUG06149.jpeg',
+    // 'img/HUG06352.jpeg',
+    // 'img/HUG06385.jpeg',
     'img/HUG06412.jpeg'
 ];
 

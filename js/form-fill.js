@@ -35,7 +35,7 @@ document.getElementById('message-form').addEventListener('submit', function (e) 
     const attendanceEl = document.querySelector('input[name="attendance"]:checked');
 
     // Basic validation
-    if (!name || !relationship || !message) {
+    if (!name || !relationship) {
         showCustomAlert('Vui lòng điền đầy đủ thông tin!', 'error');
         return;
     }
@@ -55,7 +55,12 @@ document.getElementById('message-form').addEventListener('submit', function (e) 
 
     // Include extra fields only when attending
     if (attendance === 'attending') {
-        formData.guestCount = document.getElementById('guestCount').value || '';
+        const guestCount = document.getElementById('guestCount').value;
+        if (!guestCount) {
+            showCustomAlert('Vui lòng cho mình biết số lượng khách tham dự nhé!', 'error');
+            return;
+        }
+        formData.guestCount = guestCount;
         formData.dietaryRequirements = document.getElementById('dietaryRequirements').value || '';
     }
 
